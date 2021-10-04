@@ -1,0 +1,85 @@
+{
+  "tenant": "plc-dev",
+  "global": false,
+  "is_token_endpoint_ip_header_trusted": false,
+  "name": "Preemptive Love next",
+  "is_first_party": true,
+  "oidc_conformant": false,
+  "sso_disabled": false,
+  "cross_origin_auth": false,
+  "refresh_token": {
+    "expiration_type": "non-expiring",
+    "leeway": 0,
+    "infinite_token_lifetime": true,
+    "infinite_idle_token_lifetime": true,
+    "token_lifetime": 2592000,
+    "idle_token_lifetime": 1296000,
+    "rotation_type": "non-rotating"
+  },
+  "allowed_clients": [],
+  "allowed_logout_urls": [
+    "http://app.local.com:3000/",
+    "https://preemptivelove-org.vercel.app",
+    "https://preemptivelove-org.vercel.app/account/your-information",
+    "https://staging-preemptivelove-org.vercel.app/account/your-information",
+    "https://preemptivelove*.vercel.app",
+    "https://preemptivelove*.vercel.app/account/your-information"
+  ],
+  "callbacks": [
+    "https://plc-dev.us12.webtask.io/auth0-authentication-api-debugger",
+    "http://app.local.com:3000/api/auth/callback/auth0",
+    "http://app.local.com:3000/api/callback"
+  ],
+  "native_social_login": {
+    "apple": {
+      "enabled": false
+    },
+    "facebook": {
+      "enabled": false
+    }
+  },
+  "signing_keys": [
+    {
+      "cert": "-----BEGIN CERTIFICATE-----\r\nMIIC/TCCAeWgAwIBAgIJbZuY+fAVUdnmMA0GCSqGSIb3DQEBCwUAMBwxGjAYBgNV\r\nBAMTEXBsYy1kZXYuYXV0aDAuY29tMB4XDTIwMDUwNzE3NTQzOFoXDTM0MDExNDE3\r\nNTQzOFowHDEaMBgGA1UEAxMRcGxjLWRldi5hdXRoMC5jb20wggEiMA0GCSqGSIb3\r\nDQEBAQUAA4IBDwAwggEKAoIBAQC/91w3YV+RRDeq6rgsEH7dOcEulcsgQ+5pZdby\r\ng3s/uYrqDZXYsMNbyjf/77xiDgrbvXugmNFAyR85rcbEz7C8J0lDO0htvS959/zX\r\nwAZVZgI95/ta34LgHn1Vls05tFggyaqdkZ+FS1h1pyiY4A5DhtYf4iAfiij29p4I\r\nHI/142meACdWNrCig1H2LYPdN7vBBHfqhAsbDHohoRJdsRwYbWV4EO66n7i5eGwT\r\n7X+Ou+tVlGpt17AszO5wBfBwBOrNP15iR2WK6YrqXlHUxr9ULIQrWfYLPcgYZw2X\r\na6FZ8S3lALVpkrxgIp4UGxNtbLQB80j0Wri6llEb5caz+1RfAgMBAAGjQjBAMA8G\r\nA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFEkOgCGxRHZ86KN5PV+uranOlC2jMA4G\r\nA1UdDwEB/wQEAwIChDANBgkqhkiG9w0BAQsFAAOCAQEAOa4Luf5hycMtHJuygJhe\r\niQkPRAWDuRg6o7CFVS4QgqNmImtjyUmyHNLshazVgXuwtk1sgDFJBk/5NsaU3gL1\r\nSluXM6vB5WdbDUBhcPTAeKseRxFuzL8IW0iirteuGo0b7DWFcZ1UXz+ASOwrJpGQ\r\nKRncA1TCGVDhccDJ6YHEApg9PYZlowSlkFb3duIe3zsV7yih5HfMKaWW9o97xz8R\r\nbNbBTmZZW6HTMIuma+uC18qK+nwPvVbd88DWELPB+L01lL3chz+ymKKqLXDbjXov\r\nhF5IVg2fWZowCqZEUdTWy5BrXecOUJEJn88T01LWTLCjGGl8eeytEr3/3MIA4Wm+\r\nDg==\r\n-----END CERTIFICATE-----",
+      "pkcs7": "-----BEGIN PKCS7-----\r\nMIIDLAYJKoZIhvcNAQcCoIIDHTCCAxkCAQExADALBgkqhkiG9w0BBwGgggMBMIIC\r\n/TCCAeWgAwIBAgIJbZuY+fAVUdnmMA0GCSqGSIb3DQEBCwUAMBwxGjAYBgNVBAMT\r\nEXBsYy1kZXYuYXV0aDAuY29tMB4XDTIwMDUwNzE3NTQzOFoXDTM0MDExNDE3NTQz\r\nOFowHDEaMBgGA1UEAxMRcGxjLWRldi5hdXRoMC5jb20wggEiMA0GCSqGSIb3DQEB\r\nAQUAA4IBDwAwggEKAoIBAQC/91w3YV+RRDeq6rgsEH7dOcEulcsgQ+5pZdbyg3s/\r\nuYrqDZXYsMNbyjf/77xiDgrbvXugmNFAyR85rcbEz7C8J0lDO0htvS959/zXwAZV\r\nZgI95/ta34LgHn1Vls05tFggyaqdkZ+FS1h1pyiY4A5DhtYf4iAfiij29p4IHI/1\r\n42meACdWNrCig1H2LYPdN7vBBHfqhAsbDHohoRJdsRwYbWV4EO66n7i5eGwT7X+O\r\nu+tVlGpt17AszO5wBfBwBOrNP15iR2WK6YrqXlHUxr9ULIQrWfYLPcgYZw2Xa6FZ\r\n8S3lALVpkrxgIp4UGxNtbLQB80j0Wri6llEb5caz+1RfAgMBAAGjQjBAMA8GA1Ud\r\nEwEB/wQFMAMBAf8wHQYDVR0OBBYEFEkOgCGxRHZ86KN5PV+uranOlC2jMA4GA1Ud\r\nDwEB/wQEAwIChDANBgkqhkiG9w0BAQsFAAOCAQEAOa4Luf5hycMtHJuygJheiQkP\r\nRAWDuRg6o7CFVS4QgqNmImtjyUmyHNLshazVgXuwtk1sgDFJBk/5NsaU3gL1SluX\r\nM6vB5WdbDUBhcPTAeKseRxFuzL8IW0iirteuGo0b7DWFcZ1UXz+ASOwrJpGQKRnc\r\nA1TCGVDhccDJ6YHEApg9PYZlowSlkFb3duIe3zsV7yih5HfMKaWW9o97xz8RbNbB\r\nTmZZW6HTMIuma+uC18qK+nwPvVbd88DWELPB+L01lL3chz+ymKKqLXDbjXovhF5I\r\nVg2fWZowCqZEUdTWy5BrXecOUJEJn88T01LWTLCjGGl8eeytEr3/3MIA4Wm+DjEA\r\n-----END PKCS7-----\r\n",
+      "subject": "deprecated"
+    }
+  ],
+  "allowed_origins": [
+    "http://app.local.com:3000/",
+    "https://preemptivelove-org.vercel.app",
+    "https://preemptivelove-org.vercel.app/account/your-information",
+    "https://staging-preemptivelove-org.vercel.app",
+    "https://staging-preemptivelove-org.vercel.app/account/your-information",
+    "https://preemptivelove*.vercel.app",
+    "https://preemptivelove*.vercel.app/account/your-information"
+  ],
+  "client_id": "enBdwKlj4633hdlJAuwCGlE8SOIazkeE",
+  "callback_url_template": false,
+  "client_secret": "2LYdIjX9NY-nOO6Hp0X74eXKrKneEhOT7yc6KCUFpjmuqRrTnTe8c-gJvVbsophD",
+  "jwt_configuration": {
+    "alg": "RS256",
+    "lifetime_in_seconds": 36000,
+    "secret_encoded": false
+  },
+  "client_aliases": [],
+  "token_endpoint_auth_method": "none",
+  "app_type": "regular_web",
+  "grant_types": [
+    "authorization_code",
+    "implicit",
+    "refresh_token",
+    "password",
+    "http://auth0.com/oauth/grant-type/password-realm"
+  ],
+  "web_origins": [
+    "http://app.local.com:3000/",
+    "https://preemptivelove-org.vercel.app",
+    "https://preemptivelove-org.vercel.app/account/your-information",
+    "https://staging-preemptivelove-org.vercel.app",
+    "https://staging-preemptivelove-org.vercel.app/account/you-information",
+    "https://preemptivelove*.vercel.app",
+    "https://preemptivelove*.vercel.app/account/your-information"
+  ],
+  "custom_login_page_on": true
+}

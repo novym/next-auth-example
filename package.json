@@ -1,0 +1,23 @@
+{
+  "name": "next-auth-example",
+  "version": "0.0.0",
+  "private": true,
+  "description": "An example project for NextAuth.js borrowed from next-auth",
+  "repository": "https://github.com/novym/next-auth-example.git",
+  "main": "",
+  "scripts": {
+    "dev": "NODE_OPTIONS='--inspect' next dev -H app.local.com",
+    "start": "next start",
+    "build": "next build",
+    "serve": "next start"
+  },
+  "author": "Jarrod Brooks <jbrooks02@gmail.comm>",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^11.0.0",
+    "next-auth": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sqlite3": "^5.0.2"
+  }
+}
